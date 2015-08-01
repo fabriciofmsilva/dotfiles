@@ -116,7 +116,7 @@ fi
 #    npm install jshint -g
 #    echo "OK"
 #fi
-#
+
 ## csslint
 #if which csslint &> /dev/null; then
 #    msg_checking "csslint"
@@ -125,7 +125,7 @@ fi
 #    npm install -g csslint
 #    msg_ok "OK"
 #fi
-#
+
 ## TMI (Too Many Images) - discover your image weight on the web [alpha]
 #if which tmi &> /dev/null; then
 #    msg_checking "tmi"
@@ -134,7 +134,7 @@ fi
 #    npm install -g tmi
 #    msg_ok "OK"
 #fi
-#
+
 ## grunt-init
 #if which grunt-init &> /dev/null; then
 #    msg_checking "grunt-init"
@@ -143,7 +143,7 @@ fi
 #    npm install -g grunt-init
 #    msg_ok "OK"
 #fi
-#
+
 ## bower-installer
 #if which bower-installer &> /dev/null; then
 #    msg_checking "bower-installer"
