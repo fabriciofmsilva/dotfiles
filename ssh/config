@@ -1,10 +1,6 @@
-#davidsonfellipe account
-Host github.com-davidsonfellipe
-    HostName github.com
-    User git
+#fabriciofmsilva account
+Host github.com
+    HostName ssh.github.com
+    Port 443
+    User fabriciofmsilva
     IdentityFile ~/.ssh/id_rsa_github
-
-Host gitlab.globoi.com
-    HostName gitlab.globoi.com
-    User gitlab
-    IdentityFile ~/.ssh/id_rsa_gitlab
