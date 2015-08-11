@@ -39,6 +39,18 @@ else
     msg_ok "OK"
 fi
 
+# ant
+if which ant &> /dev/null; then
+    msg_checking "ant"
+else
+    msg_install "ant" "brew install ant"
+    brew install ant
+    unset TMPDIR
+    mkdir /usr/local/var
+    mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+    msg_ok "OK"
+fi
+
 # homebrew cask
 if which brew-cask &> /dev/null; then
     msg_checking "brew-cask"

@@ -108,6 +108,15 @@ else
    echo "OK"
 fi
 
+# cordova cli
+if which cordova &> /dev/null; then
+   msg_checking "cordova"
+else
+   msg_install "cordova" "npm install cordova -g"
+   npm install cordova -g
+   echo "OK"
+fi
+
 ## jshint
 #if which jshint &> /dev/null; then
 #    msg_checking "jshint"
