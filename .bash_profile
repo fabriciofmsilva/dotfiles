@@ -118,3 +118,6 @@ export PS1='\n\[\033[0m\]\u \[\033[0;34m\]\w\[\033[0;32m\] $(git branch &> /dev/
 
 ### Added by the Heroku Toolbelt
 #export PATH="/usr/local/heroku/bin:$PATH"
+
+# Mono | C#
+export MONO_GAC_PREFIX="/usr/local"
