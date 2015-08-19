@@ -51,6 +51,15 @@ else
     msg_ok "OK"
 fi
 
+# mono | C#
+# if which mono &> /dev/null; then
+#     msg_checking "mono"
+# else
+#     msg_install "mono" "brew install mono"
+#     brew install mono
+#     msg_ok "OK"
+# fi
+
 # homebrew cask
 if which brew-cask &> /dev/null; then
     msg_checking "brew-cask"
@@ -79,7 +88,7 @@ else
    msg_ok "OK"
 fi
 
-# vagrant
+# vagrant-manager
 if which brew cask list vagrant-manager &> /dev/null; then
    msg_checking "vagrant-manager"
 else
