@@ -39,6 +39,15 @@ else
     msg_ok "OK"
 fi
 
+# clojure
+if which lein &> /dev/null; then
+    msg_checking "leiningen"
+else
+    msg_install "leiningen" "brew install leiningen"
+    brew install leiningen
+    msg_ok "OK"
+fi
+
 # ant
 if which ant &> /dev/null; then
     msg_checking "ant"
