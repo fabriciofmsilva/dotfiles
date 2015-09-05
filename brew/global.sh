@@ -9,6 +9,15 @@ else
     msg_ok "OK"
 fi
 
+# wget
+if which wget &> /dev/null; then
+    msg_checking "wget"
+else
+    msg_install "wget" "brew install wget"
+    brew install wget
+    msg_ok "OK"
+fi
+
 # phantomjs
 if which phantomjs &> /dev/null; then
     msg_checking "phantomjs"
