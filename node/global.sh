@@ -18,6 +18,15 @@ else
     msg_ok "OK"
 fi
 
+# mongo-hacker
+if which mongo-hacker &> /dev/null; then
+    msg_checking "mongo-hacker"
+else
+    msg_install "mongo-hacker" "npm install -g mongo-hacker"
+    npm install -g mongo-hacker
+    msg_ok "OK"
+fi
+
 # yeoman
 if which yo &> /dev/null; then
     msg_checking "yo"
@@ -114,6 +123,15 @@ if which cordova &> /dev/null; then
 else
    msg_install "cordova" "npm install cordova -g"
    npm install cordova -g
+   echo "OK"
+fi
+
+# less
+if which lessc &> /dev/null; then
+   msg_checking "less"
+else
+   msg_install "less" "npm install less -g"
+   npm install less -g
    echo "OK"
 fi
 
