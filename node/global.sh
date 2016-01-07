@@ -81,6 +81,15 @@ else
     msg_ok "OK"
 fi
 
+# karma-cli
+if which jasmine-core &> /dev/null; then
+    msg_checking "jasmine-core"
+else
+    msg_install "jasmine-core" "npm install -g jasmine-core"
+    npm install -g jasmine-core
+    msg_ok "OK"
+fi
+
 # protractor
 if which protractor &> /dev/null; then
     msg_checking "protractor"
