@@ -122,3 +122,8 @@ export PS1='\n\[\033[0m\]\u \[\033[0;34m\]\w\[\033[0;32m\] $(git branch &> /dev/
 # Mono | C#
 export MONO_GAC_PREFIX="/usr/local"
 export PATH="/usr/local/sbin:$PATH"
+
+# Node Environment
+export NODE_ENV="development"
+
+source /usr/local/lib/dnx/bin/dnvm.sh

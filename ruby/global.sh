@@ -7,6 +7,15 @@ if which gem &> /dev/null; then
     msg_ok "OK"
 fi
 
+# rubygems-update
+# if which rubygems-update &> /dev/null; then
+#     msg_checking "rubygems-update"
+# else
+#     msg_install "rubygems-update" "gem install rubygems-update"
+#     sudo gem install rubygems-update
+#     msg_ok "OK"
+# fi
+
 # rails
 if which rails &> /dev/null; then
     msg_checking "rails"
@@ -16,7 +25,7 @@ else
     msg_ok "OK"
 fi
 
-# rails
+# sass
 if which sass &> /dev/null; then
     msg_checking "sass"
 else

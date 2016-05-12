@@ -115,6 +115,15 @@ else
    msg_ok "OK"
 fi
 
+# vagrant-manager
+if which brew install libsass &> /dev/null; then
+   msg_checking "libsass"
+else
+   msg_install "libsass" "brew install libsass"
+   brew install libsass
+   msg_ok "OK"
+fi
+
 ## google-chrome
 #if which brew cask list google-chrome &> /dev/null; then
 #    msg_checking "google-chrome"
