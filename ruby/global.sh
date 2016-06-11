@@ -43,6 +43,15 @@ else
     msg_ok "OK"
 fi
 
+# bundler
+if which bundler &> /dev/null; then
+    msg_checking "bundler"
+else
+    msg_install "bundler" "gem install bundler"
+    sudo gem install bundler
+    msg_ok "OK"
+fi
+
 ## capistrano
 #if which cap &> /dev/null; then
 #    msg_checking "capistrano"
