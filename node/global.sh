@@ -136,11 +136,11 @@ else
 fi
 
 # ionic cli
-if which cordova &> /dev/null; then
-   msg_checking "cordova"
+if which ionic &> /dev/null; then
+   msg_checking "ionic"
 else
-   msg_install "cordova" "npm install cordova -g"
-   npm install cordova -g
+   msg_install "ionic" "npm install ionic -g"
+   npm install ionic -g
    echo "OK"
 fi
 
