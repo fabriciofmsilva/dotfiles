@@ -137,3 +137,12 @@ else
    brew cask install dropbox
    msg_ok "OK"
 fi
+
+# spotify
+if which brew cask list spotify &> /dev/null; then
+   msg_checking "spotify"
+else
+   msg_install "spotify" "brew cask install spotify"
+   brew cask install spotify
+   msg_ok "OK"
+fi
