@@ -27,23 +27,23 @@ else
     msg_ok "OK"
 fi
 
-# yeoman
-if which yo &> /dev/null; then
-    msg_checking "yo"
-else
-    msg_install "yo" "npm install -g yo"
-    npm install -g yo
-    msg_ok "OK"
-fi
+# # yeoman
+# if which yo &> /dev/null; then
+#    msg_checking "yo"
+# else
+# #    msg_install "yo" "npm install -g yo"
+#    npm install -g yo
+#    msg_ok "OK"
+# fi
 
-# express-generator
-if which express-generator &> /dev/null; then
-    msg_checking "express-generator"
-else
-    msg_install "express-generator" "npm install -g express-generator"
-    npm install -g express-generator
-    msg_ok "OK"
-fi
+# # express-generator
+# if which express-generator &> /dev/null; then
+#    msg_checking "express-generator"
+# else
+#    msg_install "express-generator" "npm install -g express-generator"
+#    npm install -g express-generator
+#    msg_ok "OK"
+# fi
 
 # grunt-cli
 if which grunt &> /dev/null; then
@@ -81,7 +81,7 @@ else
     msg_ok "OK"
 fi
 
-# karma-cli
+# jasmine-core
 if which jasmine-core &> /dev/null; then
     msg_checking "jasmine-core"
 else
@@ -108,14 +108,14 @@ else
     msg_ok "OK"
 fi
 
-# browserify
-if which browserify &> /dev/null; then
-   msg_checking "browserify"
-else
-   msg_install "browserify" "npm install -g browserify"
-   npm install -g browserify
-   msg_ok "OK"
-fi
+# # browserify
+# if which browserify &> /dev/null; then
+#    msg_checking "browserify"
+# else
+#    msg_install "browserify" "npm install -g browserify"
+#    npm install -g browserify
+#    msg_ok "OK"
+# fi
 
 # vtop
 if which vtop &> /dev/null; then
@@ -153,47 +153,56 @@ else
    echo "OK"
 fi
 
-## jshint
-#if which jshint &> /dev/null; then
+# # jshint
+# if which jshint &> /dev/null; then
 #    msg_checking "jshint"
-#else
+# else
 #    msg_install "jshint" "npm install jshint -g"
 #    npm install jshint -g
 #    echo "OK"
-#fi
+# fi
 
-## csslint
-#if which csslint &> /dev/null; then
+# jsinspect
+if which jsinspect &> /dev/null; then
+    msg_checking "jsinspect"
+else
+    msg_install "jsinspect" "npm install -g jsinspect"
+    npm install -g jsinspect
+    msg_ok "OK"
+fi
+
+# # csslint
+# if which csslint &> /dev/null; then
 #    msg_checking "csslint"
-#else
+# else
 #    msg_install "csslint" "npm install -g csslint"
 #    npm install -g csslint
 #    msg_ok "OK"
-#fi
+# fi
 
-## TMI (Too Many Images) - discover your image weight on the web [alpha]
-#if which tmi &> /dev/null; then
+# # TMI (Too Many Images) - discover your image weight on the web [alpha]
+# if which tmi &> /dev/null; then
 #    msg_checking "tmi"
-#else
+# else
 #    msg_install "tmi" "npm install -g tmi"
 #    npm install -g tmi
 #    msg_ok "OK"
-#fi
+# fi
 
-## grunt-init
-#if which grunt-init &> /dev/null; then
+# # grunt-init
+# if which grunt-init &> /dev/null; then
 #    msg_checking "grunt-init"
-#else
+# else
 #    msg_install "grunt-init" "npm install -g grunt-init"
 #    npm install -g grunt-init
 #    msg_ok "OK"
-#fi
+# fi
 
-## bower-installer
-#if which bower-installer &> /dev/null; then
+# # bower-installer
+# if which bower-installer &> /dev/null; then
 #    msg_checking "bower-installer"
-#else
+# else
 #    msg_install "bower-installer" "npm install -g bower-installer"
 #    npm install -g bower-installer
 #    msg_ok "OK"
-#fi
+# fi

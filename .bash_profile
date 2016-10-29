@@ -30,16 +30,16 @@
 # alias rmpyc='find . -iname "*.pyc" -delete'
 
 # dropbox
-# alias dotfiles='cd /Users/davidson/Dropbox/labs/dotfiles'
-# alias dropbox='cd /Users/davidson/Dropbox'
-# alias drive='cd /Users/davidson/Google Drive'
-# alias jobs='cd /Users/davidson/Dropbox/jobs'
-# alias labs='cd /Users/davidson/Dropbox/labs'
-# alias keepfast='cd /Users/davidson/Dropbox/labs/keepfast'
-# alias talks='cd /Users/davidson/Dropbox/talks'
+# alias dotfiles='cd /Users/fabriciosilva/Dropbox/github/dotfiles'
+# alias dropbox='cd /Users/fabriciosilva/Dropbox'
+# alias drive='cd /Users/fabriciosilva/Google Drive'
+# alias jobs='cd /Users/fabriciosilva/Dropbox/jobs'
+# alias github='cd /Users/fabriciosilva/Dropbox/github'
+# alias keepfast='cd /Users/fabriciosilva/Dropbox/github/keepfast'
+# alias talks='cd /Users/fabriciosilva/Dropbox/talks'
 
 # others dirs
-# alias projetos='cd /Users/davidson/Projetos'
+# alias projetos='cd /Users/fabriciosilva/Projetos'
 
 # mongo
 # alias mongorun='mongod --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf &'
@@ -68,21 +68,21 @@
 export EDITOR="/usr/local/bin/subl"
 
 # paths > general
-#export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-#export PATH="/usr/local/share/npm/bin:${PATH}"
+# export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+# export PATH="/usr/local/share/npm/bin:${PATH}"
 
 # paths > rvm
-#if [ -s "$HOME/.rvm/scripts/rvm" ]; then . "$HOME/.rvm/scripts/rvm"; fi
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# if [ -s "$HOME/.rvm/scripts/rvm" ]; then . "$HOME/.rvm/scripts/rvm"; fi
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # colors
-#export LSCOLORS="DxGxcxdxCxegedabagacad"
+# export LSCOLORS="DxGxcxdxCxegedabagacad"
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="4;33"
 export CLICOLOR="auto"
 
 # prompt
-#export PS1='\[\033[01;32m\]\u ➜  \[\033[01;31m\]\w\[\033[00m\]$(git branch &>/dev/null; if [ $? -eq 0 ]; then echo "\[\033[01;33m\] ($(git branch | grep ^*|sed s/\*\ //))\[\033[00m\]"; fi) $ '
+# export PS1='\[\033[01;32m\]\u ➜  \[\033[01;31m\]\w\[\033[00m\]$(git branch &>/dev/null; if [ $? -eq 0 ]; then echo "\[\033[01;33m\] ($(git branch | grep ^*|sed s/\*\ //))\[\033[00m\]"; fi) $ '
 export PS1='\n\[\033[0m\]\u \[\033[0;34m\]\w\[\033[0;32m\] $(git branch &> /dev/null; if [ $? -eq 0 ]; then echo "\[\033[01;33m\] ($(git branch | grep ^*|sed s/\*\ //))\[\033[32m\]"; fi)\n\[\033[0m\]\$ '
 
 # mysql
@@ -114,14 +114,14 @@ export PS1='\n\[\033[0m\]\u \[\033[0;34m\]\w\[\033[0;32m\] $(git branch &> /dev/
 #   . ~/.git-completion.bash
 # fi
 
-#PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:${PATH}"
+# PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:${PATH}"
 
 ### Added by the Heroku Toolbelt
-#export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"
 
 # Mono | C#
-export MONO_GAC_PREFIX="/usr/local"
-export PATH="/usr/local/sbin:$PATH"
+# export MONO_GAC_PREFIX="/usr/local"
+# export PATH="/usr/local/sbin:$PATH"
 
 # Node Environment
 export NODE_ENV="development"

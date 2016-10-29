@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 source common/functions.sh
 
 # start
@@ -26,6 +25,8 @@ sh ruby/global.sh
 
 sh sublime/global.sh
 
-sh common/dotfiles.sh
+sh vsc/global.sh
 
-sh vim/global.sh
+# sh vim/global.sh
+
+sh common/dotfiles.sh

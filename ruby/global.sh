@@ -16,23 +16,23 @@ fi
 #     msg_ok "OK"
 # fi
 
-# rails
-if which rails &> /dev/null; then
-    msg_checking "rails"
-else
-    msg_install "rails" "gem install rails"
-    sudo gem install rails
-    msg_ok "OK"
-fi
+# # rails
+# if which rails &> /dev/null; then
+#     msg_checking "rails"
+# else
+#     msg_install "rails" "gem install rails"
+#     sudo gem install rails
+#     msg_ok "OK"
+# fi
 
-# sass
-if which sass &> /dev/null; then
-    msg_checking "sass"
-else
-    msg_install "sass" "gem install sass"
-    sudo gem install sass
-    msg_ok "OK"
-fi
+# # sass
+# if which sass &> /dev/null; then
+#     msg_checking "sass"
+# else
+#     msg_install "sass" "gem install sass"
+#     sudo gem install sass
+#     msg_ok "OK"
+# fi
 
 # jekyll
 if which jekyll &> /dev/null; then
@@ -52,30 +52,29 @@ else
     msg_ok "OK"
 fi
 
-## capistrano
-#if which cap &> /dev/null; then
+# # capistrano
+# if which cap &> /dev/null; then
 #    msg_checking "capistrano"
-#else
+# else
 #    msg_install "capistrano" "gem install capistrano"
 #    sudo gem install capistrano
 #    msg_ok "capistrano"
-#fi
-#
-## compass
-#if which compass &> /dev/null; then
+# fi
+
+# # compass
+# if which compass &> /dev/null; then
 #    msg_checking "compass"
-#else
+# else
 #    msg_install "compass" "gem install compass"
 #    sudo gem install compass
 #    msg_ok "compass"
-#fi
-#
-## chunky_png
-#if which chunky_png &> /dev/null; then
+# fi
+
+# # chunky_png
+# if which chunky_png &> /dev/null; then
 #    msg_checking "chunky_png"
-#else
+# else
 #    msg_install "chunky_png" "gem install chunky_png"
 #    sudo gem install chunky_png
 #    msg_ok "chunky_png"
-#fi
-
+# fi

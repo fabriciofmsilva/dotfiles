@@ -1,6 +1,7 @@
 #fabriciofmsilva account
 Host github.com
     HostName ssh.github.com
+    ForwardAgent yes
     Port 443
     User fabriciofmsilva
     IdentityFile ~/.ssh/id_rsa_github

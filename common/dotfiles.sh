@@ -49,7 +49,7 @@ fi
 # # .inputrc
 # if [ -f ".inputrc" ]; then
 #     msg_installing ".inputrc"
-#     sudo ln -s /Users/davidson/Dropbox/Labs/dotfiles/common/.inputrc ~/.inputrc
+#     sudo ln -s /Users/fabriciosilva/Dropbox/Labs/dotfiles/common/.inputrc ~/.inputrc
 # fi
 
 # # this file prevents the shell login message
