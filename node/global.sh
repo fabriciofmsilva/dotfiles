@@ -9,6 +9,13 @@ else
     msg_ok "OK"
 fi
 
+# npm config
+npm set init-author-name "Fabrício Silva"
+npm set init-author-email "fabriciofmsilva@gmail.com"
+npm set init-author-url "http://fabriciofmsilva.com.br/"
+npm set init-license "MIT"
+npm adduser
+
 # nodemon
 if which nodemon &> /dev/null; then
     msg_checking "nodemon"
