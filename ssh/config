@@ -1,3 +1,5 @@
+Host *
+    UseKeychain yes
 #fabriciofmsilva account
 Host github.com-fabriciofmsilva
     HostName github.com
