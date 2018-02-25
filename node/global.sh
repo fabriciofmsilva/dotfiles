@@ -9,6 +9,22 @@ else
     msg_ok "OK"
 fi
 
+# npm config
+npm set init-author-name "Fabrício Silva"
+npm set init-author-email "fabriciofmsilva@gmail.com"
+npm set init-author-url "http://fabriciofmsilva.com.br/"
+npm set init-license "MIT"
+npm adduser
+
+# gitignore
+if which gitignore &> /dev/null; then
+    msg_checking "gitignore"
+else
+    msg_install "gitignore" "npm install -g gitignore"
+    npm install -g gitignore
+    msg_ok "OK"
+fi
+
 # nodemon
 if which nodemon &> /dev/null; then
     msg_checking "nodemon"
