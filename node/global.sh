@@ -25,6 +25,15 @@ else
     msg_ok "OK"
 fi
 
+# http-server
+if which http-server &> /dev/null; then
+    msg_checking "http-server"
+else
+    msg_install "http-server" "npm install -g http-server"
+    npm install -g http-server
+    msg_ok "OK"
+fi
+
 # nodemon
 if which nodemon &> /dev/null; then
     msg_checking "nodemon"
