@@ -1,3 +1,7 @@
+# locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # general
 alias ls='ls -G'
 alias la='ls -la'
@@ -51,7 +55,21 @@ alias nodeserver='http-server . -p 3000'
 # alias specjs='rake spec:javascript'
 
 # Setting PATH for Python 2.7
-#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+# export PATH=$PATH:$HOME/Library/Python/2.7/bin
+# export XDG_CONFIG_DIRS="$HOME/.config"
+
+# powerline-daemon -q
+# POWERLINE_BASH_CONTINUATION=1
+# POWERLINE_BASH_SELECT=1
+# source $HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
+# function _update_ps1() {
+#     PS1=$(powerline-shell $?)
+# }
+
+# if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+#     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+# fi
 
 # python
 # alias pyclean='find . -name "*.pyc" -exec rm {} \;'
