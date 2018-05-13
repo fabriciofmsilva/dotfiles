@@ -164,3 +164,8 @@ export PATH=$ANDROID_HOME/tools:$PATH
 #Set GRADLE_HOME
 export GRADLE_HOME=/Library/gradle/gradle-3.2
 export PATH=$PATH:$GRADLE_HOME/bin
+
+# Golang
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
