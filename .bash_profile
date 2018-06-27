@@ -3,19 +3,28 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # general
+alias cl='clear'
+# alias celar='clear'
 alias ls='ls -G'
 alias la='ls -la'
 alias ll='ls -l'
 # alias lw='ls -l'
 # alias lqq='ls -l'
-alias cl='clear'
-# alias celar='clear'
 alias home='cd ~'
+alias hs='history | grep'
 alias rt='reset'
 alias trash='rm -fr ~/.Trash'
 alias ..='cd ..'
 alias tree='ls -R | grep ":$" | sed -e "s/:$//" -e "s/[^-][^\/]*\//--/g" -e "s/^/   /" -e "s/-/|/"'
 alias rmds='rm -f .DS_Store .localized;ls -laG'
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
+alias myip="curl http://ipecho.net/plain; echo"
+alias svim='sudo vim'
+alias update='brew update && brew upgrade'
+
+# git
+alias gac='git add . && git commit -a -m '
+alias gl='git log --oneline --all --graph --decorate '
 
 # finder
 # alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
@@ -50,6 +59,8 @@ alias netlisteners='lsof -i -P | grep LISTEN'
 
 # node
 alias nodeserver='http-server . -p 3000'
+alias nis='npm install --save '
+alias nisd='npm install --save-dev '
 
 # spec
 # alias specjs='rake spec:javascript'
