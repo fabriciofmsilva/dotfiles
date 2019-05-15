@@ -1,0 +1,9 @@
+{
+    "emmet.includeLanguages": {
+        "html": "html",
+        "erb": "erb",
+        "javascript": "javascriptreact",
+        "vue": "html",
+        "ejs": "html"
+    }
+}
